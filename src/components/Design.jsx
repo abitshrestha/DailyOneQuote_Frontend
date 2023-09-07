@@ -24,7 +24,7 @@ const Design = () => {
     //get quote i.e new
     const getQuote = async () => {
         try {
-            const response = await axios.get(`http://localhost:2000/getQuote`)
+            const response = await axios.get(`https://dailyquote-backend.onrender.com/getQuote`)
             const responseData=response.data;
             if(responseData.code==='ENOTFOUND'){
                 setError('Internet');
