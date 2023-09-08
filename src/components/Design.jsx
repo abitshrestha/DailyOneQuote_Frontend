@@ -32,8 +32,8 @@ const Design = () => {
             }
             else{
                 resetError();
-                console.log(response.data);
-                setQuote(response.data);
+                console.log(responseData);
+                setQuote(responseData);
                 const todayDate = new Date().toISOString();
                 const newQuote = JSON.parse(response.data);
                 newQuote[0].todayDate0 = todayDate;
