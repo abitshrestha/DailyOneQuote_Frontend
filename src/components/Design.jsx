@@ -26,6 +26,7 @@ const Design = () => {
         try {
             const response = await axios.get(`https://dailyquote-backend.onrender.com/getQuote`)
             const responseData=response.data;
+            console.log(responseData);
             if(responseData.code==='ENOTFOUND'){
                 setError('Internet');
                 setErrorhead('I am not available')
