@@ -32,7 +32,7 @@ const Design = () => {
             }
             else{
                 resetError();
-                console.log(reponse.data);
+                console.log(response.data);
                 setQuote(response.data);
                 const todayDate = new Date().toISOString();
                 const newQuote = JSON.parse(response.data);
